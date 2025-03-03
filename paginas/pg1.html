@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="principais/css/pg1.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="headerDentro">
+            <div class="logo">
+                <h1>meu<span>portifólio</span></h1>
+                <div class="conteiner">
+                <ul class="nav">
+                    <a href="https://www.instagram.com/nickh20_09/?utm_source=ig_web_button_share_sheet" target="_blank"><li><img src="principais/imagens/instagram.png" alt="Instagram" width="50px" height="50px"></li></a>
+                    <a href="https://web.facebook.com/nicolas.hernandes.313924"target="_blank"><li><img src="principais/imagens/face.png" alt="facebook" width="50px" height="50px"></li></a>
+                    <a href="https://www.youtube.com/@nicolassantos4846"target="_blank"><li><img src="principais/imagens/youtube.png" alt="Youtube" width="50px" height="50px"></li></a>
+                    <button class="botao" onclick="toggleAba()">Contatos</button>
+                    <div class="aba-flutuante" id="abaFlutuante">
+                      <p>Tel: (11) 96333-5019 <br>
+                         Email: nicolas.santos289@etec.sp.gov.br</p>
+                      <button onclick="toggleAba()">Fechar</button>
+                    </div>
+                  
+                    <script>
+                      function toggleAba() {
+                        const aba = document.getElementById('abaFlutuante');
+                        aba.style.display = aba.style.display === 'block' ? 'none' : 'block';
+                      }
+                    </script>
+                    
+                </ul>
+                </div>
+            </div>
+            
+        </div>   
+    </div>
+
+    
+    
+    
+</body>
+</html>
+
+

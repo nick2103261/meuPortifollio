@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aba Flutuante</title>
+  <style>
+    .aba-flutuante {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 300px;
+      padding: 20px;
+      background-color: #f1f1f1;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      display: none; /* Inicialmente oculta */
+    }
+
+    .botao {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="botao" onclick="toggleAba()">Abrir/Abrir</button>
+  <div class="aba-flutuante" id="abaFlutuante">
+    <p>Conteúdo da aba flutuante</p>
+    <button onclick="toggleAba()">Fechar</button>
+  </div>
+
+  <script>
+    function toggleAba() {
+      const aba = document.getElementById('abaFlutuante');
+      aba.style.display = aba.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
